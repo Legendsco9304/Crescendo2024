@@ -1,14 +1,8 @@
 package frc.robot;
 
-import edu.wpi.first.wpilibj2.command.ParallelCommandGroup;
-import edu.wpi.first.wpilibj2.command.SequentialCommandGroup;
-import edu.wpi.first.wpilibj2.command.WaitUntilCommand;
 import edu.wpi.first.wpilibj2.command.button.CommandXboxController;
-import frc.robot.commands.feeder.FeedByPower;
 import frc.robot.commands.multiSystem.Collect;
 import frc.robot.commands.multiSystem.Shoot;
-import frc.robot.commands.shooter.RollByPower;
-import frc.robot.subSystems.Shooter;
 
 public class IO {
 
