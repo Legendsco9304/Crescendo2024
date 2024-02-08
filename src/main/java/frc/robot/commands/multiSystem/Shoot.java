@@ -10,8 +10,7 @@ import frc.robot.subSystems.Shooter;
 public class Shoot extends ParallelCommandGroup{
 
     public Shoot(double RPM) {
-        super(new RollByPower(0.5),
-                        new SequentialCommandGroup(
+        super(new RollByPower(1),new SequentialCommandGroup(
                                 new WaitUntilCommand(() -> Shooter.getInstance().getVelocity() > RPM),
                                 new FeedByPower(1)));
     }
